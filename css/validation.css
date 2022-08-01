@@ -1,0 +1,102 @@
+html
+{
+    height: 100%;
+    width: 100%;   
+}
+
+body
+{
+    height: 100%;
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: powderblue;
+    margin: 0;
+}
+
+form{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.login
+
+{
+    height: 60%;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    background-color:white;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+label{
+   margin-right: 50%;
+  /* text-align: left !important; */
+    
+}
+
+span{
+    color: red;
+    height: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+button 
+{
+    width:30%;
+    margin: 4%;
+    cursor: pointer;
+    background-color: #04AA6D;
+    color: white;
+}
+
+button a{
+    text-decoration:none ;
+}
+
+h1
+{
+    text-align: center ;
+    color: black;
+    opacity: 0.7;
+}
+
+input[type=text],input[type=password]
+{
+    height: 8%;
+    width: 75%;
+    padding:10px;
+    font-size:15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+::placeholder
+{
+    font-size: 15px;
+    color: rgb(179, 25, 158);
+}
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 820px)   {
+    .login
+    {
+        width:80%;
+        height:50%;
+    }
+}
+@media only screen and (min-width : 820px) and (max-width : 920px)   {
+    .login
+    {
+        width:60%;
+        height: 40%;;
+    }
+}
