@@ -1,0 +1,120 @@
+html{
+  height:100%;
+  width:100%
+}    
+
+body {
+  height:100%;
+  width:100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+ }
+
+.Header {
+  height: 10%;
+  width:100%;
+  text-align: center;
+  background: white;
+  color: black;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.YoutubeLogo{
+height: 30px;
+margin: 7px;
+margin-top: -100px;
+margin-left: -25px;
+cursor: pointer;
+}
+.YoutubeSearchBar{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 45%;
+}
+.SearchInput{
+width: 100%;
+font-size: 17px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.SearchInput::-webkit-input-placeholder{
+font-size: 17px;
+}
+.YoutubeHeaderIcons{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.YoutubeHeaderIcon{
+color: #606060;
+margin: 13px; 
+font-size: 20px;
+cursor: pointer;
+}
+
+.container{
+  width:100%;
+  height:90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+.YoutubeSidebarField{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.YoutubeSidebarField a{
+  text-decoration: none;
+  color: black;
+}
+
+.YoutubeSidebarField:hover{
+  background-color: #e5e5e5ab;
+}
+.YoutubeSidebarField i{
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 8px;
+  color: #606060;
+}
+
+.YoutubeSidebarField h1{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+.content {
+  background-color: #e5e5e5ab;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  
+}
