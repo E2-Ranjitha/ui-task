@@ -25,11 +25,11 @@ form{
 .login
 
 {
-    height: 60%;
-    width: 35%;
+    height: 45%;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
     background-color:white;
     flex-direction: column;
@@ -37,8 +37,8 @@ form{
 }
 
 label{
-   margin-right: 50%;
-  /* text-align: left !important; */
+   width: 75%;
+   text-align: left;
     
 }
 
@@ -51,8 +51,9 @@ span{
 
 button 
 {
+    height: 10%;
     width:30%;
-    margin: 4%;
+    margin: 4px;
     cursor: pointer;
     background-color: #04AA6D;
     color: white;
@@ -71,7 +72,7 @@ h1
 
 input[type=text],input[type=password]
 {
-    height: 8%;
+    height: 10%;
     width: 75%;
     padding:10px;
     font-size:15px;
@@ -89,14 +90,14 @@ input[type=text],input[type=password]
 @media only screen and (min-device-width : 200px) and (max-device-width : 820px)   {
     .login
     {
-        width:80%;
-        height:50%;
+        width:70%;
+        height:40%;
     }
 }
-@media only screen and (min-width : 820px) and (max-width : 920px)   {
+@media only screen and (min-width : 820px) and (max-width : 1200px)   {
     .login
     {
-        width:60%;
-        height: 40%;;
+        width:40%;
+        height: 50%;;
     }
 }
