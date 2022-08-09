@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TODO TASK</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="css/table.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'>
+
+    <script src="javascript/table.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <span>EMPLOYEE DETAILS</span>
+    </div>
+
+    <div class="container">
+        
+        <button class="popup" onclick="openForm(),newReset()">+ ADD DETAILS</button>
+        <div id="msg" class="message"></div>
+     
+        <div class="details">
+            <table id="table">
+                <tr>
+                    <td class="column">Name</td>
+                    <td class="column">Employee Id</td>
+                    <td class="column">Email Id</td>
+                    <td class="column">Action</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="formPopup" id="popupForm">
+
+            <div class="formContainer">
+                <form id=" form" name="login_form">
+
+                    <h2>Employee Details</h2>
+                    <label><b>Enter user Name</b></label>
+                    <input type="text" id="name" placeholder="Name">
+                                
+                    <label><b>Enter your Employee Id</b></label>
+                    <input type="text" id="emp" placeholder="Employee Id">
+                                
+                    <label><b>Enter your Email Id</b></label>
+                    <input type="text" id="email" placeholder="Email Id " >
+
+                    <button type="button" id="btn" onclick="submitForm(),closeForm()"class="btn">ADD</button>
+                    <button type="button" onclick="closeForm()" class="btn cancel">CANCEL</button>
+                </form>
+            </div>
+                    
+        </div>
+       
+    </div>
+
+</body>
+
+</html>
