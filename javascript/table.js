@@ -11,21 +11,19 @@ function submitForm () {
     var readData = readingDataFromLocalStorage(dataEntered);
   
    if(dataEntered == false){
-    msg.innerHTML = "<span style='color:red'>Please Enter Data!</span>";
+    msg.innerHTML = "<span style='color:red'>Please Enter All the Details!</span>";
    }
    else{
 
     if(row == null){
         insert(readData);
-        msg.innerHTML = "<span style='color:green'>Data Inserted!</span>";
+        msg.innerHTML = "<span style='color:green'>Data Added!</span>";
     }
     else{
         update();
         msg.innerHTML ="<span style='color:green'>Data Updated!</span>";
     }
    }
-   
-  
 }
 
 
