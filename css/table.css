@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container{
+  height: 90%;
+  width: 100%;
+  background-color:white;
+}
+
+.popup {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #49f116;
+  color: block;
+  padding: 14px 20px;
+  cursor: pointer;
+  margin: 10px 10px ;
+}
+
+.popup:hover {
+  background-color: red;
+  color: white;
+}
+
+.details{
+  height: 70%;
+  width: 100%; 
+}
+
+.message{
+  height: 10%;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+ 
+table{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+td{
+   padding: 10px 60px;
+}
+
+.column{
+  background-color: orange;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border:2px solid black;
+  border-radius: 5px;
+}
+
+tr{
+  background-color: rgb(94, 80, 80);
+  border:2px solid block;
+  border-radius: 5px;
+  color:white;
+}
+
+.openBtn {
+  display: flex;
+  justify-content: left;
+}
+  
+.editIcon{
+  color: white;
+  font-size: 27px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.deleteBtn{
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+.editBtn {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #cc0000;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  margin: 10px 10px ;
+}
+
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 5%;
+  transform: translate(-30%, 20%);
+  border: 3px solid #999999;
+  z-index: 9;
+}
+
+.formContainer {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.formContainer input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+}
+
+.formContainer input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+
+.formContainer .cancel {
+  background-color: red;
+}
+
+.formContainer .btn:hover, .openButton:hover {
+  opacity: 1;
+}
