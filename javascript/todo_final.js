@@ -71,7 +71,6 @@ function tableCell(index,name,id,email){
   email1.innerHTML = email;
   dlt1.innerHTML = '<i  onclick="dFunOpen('+index+')" class="fa-solid fa-trash-can"></i>';
   edit1.innerHTML='<i onclick ="editTbl('+index+')" class="fa-solid fa-pen-to-square"></i>';
-  
 }
 
 //EDIT
