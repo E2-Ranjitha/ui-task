@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO TASK</title>
+  <link rel="stylesheet" href="css/todo_final.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body onload="init();">
+  <header>
+    <div class="head">EMPLOYEE DETAILS</div>
+    <div class="designbtn"><button id="modal-btn">+ADD </button></div>
+  </header>
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+        <form   id="formContainer" >
+
+          <div class="modal-header">
+            <p>EMPLOYEE DETAIL</p>
+            <button type="button" class="close" id="submit" onclick="closeForm()">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <label ><b>Enter Employee Name</b></label>
+            <input id="empName"  type="text"   placeholder="Employee Name" required> 
+          
+            <label><b>Enter Employee ID</b></label>
+            <input id="empId" type="text"  placeholder="Employee Id" required> 
+           
+            <label><b>Enter Email</b></label>
+            <input id="email" type="text"  placeholder="Employee Email" required > 
+            <span id="error"></span>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" onclick="errorMessage()"  id="closing">SUBMIT</button>
+            <button type="reset" >CLEAR</button>
+          </div>
+
+        </form>
+    </div>
+  </div>
+
+  <div class="dFull" id="dFull">
+    <div class="dPop">
+      
+      <div class="dBody"><p>Are you sure want to delete this Row?</p></div>
+        <div class="dFoot">
+          <div class="dButton1" ><button onclick="dFunClose()" type="button">NO</button>
+          </div>
+
+          <div class="dButton2" id="check"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container"> 
+
+    <table border="1"  id="myTable">
+     
+        <thead >
+          <tr >
+            <th>Employee Name</th>
+            <th>Employee ID</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+      <tbody id = "tableRows" class="list"></tbody>
+    </table>
+  </div>
+
+  <script src="javascript/todo_final.js"></script>
+</body>
+</html>
